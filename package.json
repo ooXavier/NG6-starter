@@ -20,11 +20,12 @@
     },
     "configFile": "jspm.config.js",
     "dependencies": {
-      "angular": "github:angular/bower-angular@^1.4.0",
-      "angular-mocks": "npm:angular-mocks@^1.4.0",
-      "angular-ui-router": "github:angular-ui/ui-router@^0.2.15",
+      "@angular/router": "npm:@angular/router@^0.2.0",
+      "angular": "github:angular/bower-angular@^1.5.3",
+      "angular-mocks": "npm:angular-mocks@^1.5.3",
       "capaj/systemjs-hot-reloader": "github:capaj/systemjs-hot-reloader@^0.5.0",
       "css": "github:systemjs/plugin-css@^0.1.11",
+      "ngcomponentrouter": "npm:ngcomponentrouter@^2.0.0",
       "normalize.css": "github:necolas/normalize.css@^3.0.3",
       "text": "github:systemjs/plugin-text@^0.0.2"
     },

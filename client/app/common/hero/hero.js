@@ -1,9 +1,9 @@
 import angular from 'angular';
-import 'angular-ui-router';
+import 'ngcomponentrouter';
 import heroComponent from './hero.component';
 
 let heroModule = angular.module('hero', [
-	'ui.router'
+	'ngComponentRouter'
 ])
 .directive('hero', heroComponent);
 

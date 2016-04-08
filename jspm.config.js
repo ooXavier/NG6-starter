@@ -13,19 +13,17 @@ System.config({
   },
 
   map: {
-    "angular": "github:angular/bower-angular@1.4.0",
-    "angular-mocks": "npm:angular-mocks@1.4.0",
-    "angular-ui-router": "github:angular-ui/ui-router@0.2.15",
+    "@angular/router": "npm:@angular/router@0.2.0",
+    "angular": "github:angular/bower-angular@1.5.3",
+    "angular-mocks": "npm:angular-mocks@1.5.3",
     "babel": "npm:babel-core@5.8.25",
     "babel-runtime": "npm:babel-runtime@5.8.25",
     "capaj/systemjs-hot-reloader": "github:capaj/systemjs-hot-reloader@0.5.0",
     "core-js": "npm:core-js@1.2.1",
     "css": "github:systemjs/plugin-css@0.1.12",
+    "ngcomponentrouter": "npm:ngcomponentrouter@2.0.0",
     "normalize.css": "github:necolas/normalize.css@3.0.3",
     "text": "github:systemjs/plugin-text@0.0.2",
-    "github:angular-ui/ui-router@0.2.15": {
-      "angular": "github:angular/bower-angular@1.4.0"
-    },
     "github:capaj/systemjs-hot-reloader@0.5.0": {
       "debug": "npm:debug@2.2.0",
       "socket.io-client": "github:socketio/socket.io-client@1.3.7",
@@ -104,6 +102,9 @@ System.config({
       "clean-css": "npm:clean-css@3.1.9",
       "fs": "github:jspm/nodelibs-fs@0.1.2",
       "path": "github:jspm/nodelibs-path@0.1.0"
+    },
+    "npm:@angular/router@0.2.0": {
+      "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:amdefine@0.1.0": {
       "fs": "github:jspm/nodelibs-fs@0.1.2",
@@ -293,6 +294,9 @@ System.config({
     "npm:miller-rabin@4.0.0": {
       "bn.js": "npm:bn.js@4.5.1",
       "brorand": "npm:brorand@1.0.5"
+    },
+    "npm:ngcomponentrouter@2.0.0": {
+      "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:os-browserify@0.1.2": {
       "os": "github:jspm/nodelibs-os@0.1.0"

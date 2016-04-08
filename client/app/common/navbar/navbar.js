@@ -1,9 +1,9 @@
 import angular from 'angular';
-import 'angular-ui-router';
+import 'ngcomponentrouter';
 import navbarComponent from './navbar.component';
 
 let navbarModule = angular.module('navbar', [
-	'ui.router'
+	'ngComponentRouter'
 ])
 .directive('navbar', navbarComponent);
 

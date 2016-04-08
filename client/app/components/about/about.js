@@ -1,17 +1,10 @@
 import angular from 'angular';
-import 'angular-ui-router';
+import 'ngcomponentrouter';
 import aboutComponent from './about.component';
 
 let aboutModule = angular.module('about', [
-	'ui.router'
+	'ngComponentRouter'
 ])
-.config(($stateProvider)=>{
-	$stateProvider
-		.state('about', {
-			url: '/about',
-			template: '<about></about>'
-		});
-})
 .directive('about', aboutComponent);
 
 export default aboutModule;

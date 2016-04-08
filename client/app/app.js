@@ -1,16 +1,25 @@
 import angular from 'angular';
-import 'angular-ui-router';
+import 'ngcomponentrouter';
 import Common from './common/common';
 import Components from './components/components';
 import AppComponent from './app.component';
 import 'normalize.css';
 
+import template from './app.html!text';
+
 let appModule = angular.module('app', [
-	'ui.router',
+    'ngComponentRouter',
 	Common.name,
 	Components.name
-])
-.directive('app', AppComponent);
+]).value('$routerRootComponent', 'app')
+//.component('app', AppComponent);
+    .component('app', {
+        template,
+        $routeConfig: [
+          {path: '/home', name: 'Home', component: 'home', useAsDefault: true},
+          {path: '/about', name: 'About', component: 'about' }
+        ]
+    });
 
 /*
  * As we are using ES6 with Angular 1.x we can't use ng-app directive
